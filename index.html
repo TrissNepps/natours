@@ -99,6 +99,7 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
+                <img
                 src="img/nat-1-large.jpg"
                 alt="photo1"
                 class="composition__photo composition__photo--p1"
@@ -404,7 +405,13 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="full logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="img/logo-green-small-1x.png 1x"
+            media="(max-width: 37.5em)"
+          />
+          <img srcset="img/logo-green-1x.png 1x" alt="full logo" />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
